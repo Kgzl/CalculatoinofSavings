@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/creditTermTitle"
+        android:layout_width="298dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="159dp"
+        android:gravity="center"
+        android:text="Срок накопления на астрономический телескоп:"
+        android:textAllCaps="true"
+        android:textColor="#03A9F4"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/creditTermOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/creditTermOut"
+        android:layout_width="304dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="8dp"
+        android:background="#32FF9800"
+        android:gravity="center"
+        android:hint="Здесь будет срок накопления"
+        android:textColor="#3F51B5"
+        android:textColorHint="#9A3F51B5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/monthlyPaymentsTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creditTermTitle" />
+
+    <TextView
+        android:id="@+id/monthlyPaymentsTitle"
+        android:layout_width="229dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Ежемесячные выплаты"
+        android:textAllCaps="true"
+        android:textColor="#03A9F4"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/monthlyPaymentsOut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creditTermOut" />
+
+    <TextView
+        android:id="@+id/monthlyPaymentsOut"
+        android:layout_width="305dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="16dp"
+        android:background="#32FF9800"
+        android:gravity="center"
+        android:hint="Здесь будут ежемесячные выплаты"
+        android:textColor="#3F51B5"
+        android:textColorHint="#9A3F51B5"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyPaymentsTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
